@@ -1,0 +1,115 @@
+@font-face {
+  font-family: "Worksans regular";
+  src: url("assets/fonts/WorkSans-VariableFont_wght.ttf") format("truetype"); /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: "Worksans Italic";
+  src: url("assets/fonts/WorkSans-Italic-VariableFont_wght.ttf")
+    format("truetype"); /* Safari, Android, iOS */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  background-image: url("assets/images/background-pattern-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: fixed;
+  background-color: hsl(275, 100%, 97%);
+  font-family: "Worksans regular";
+  user-select: none;
+}
+
+main {
+  min-height: 50%;
+  width: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 50px hsl(292, 16%, 49%);
+}
+
+.header_container {
+  display: flex;
+  padding: 15px;
+  padding-bottom: 0;
+}
+
+figure {
+  margin: auto 10px;
+}
+
+.has-border {
+  border-bottom: 1px solid #e4e4e4;
+}
+
+.not-collapsed {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px;
+  cursor: pointer;
+}
+
+.not-collapsed:hover {
+  color: #ad28eb;
+}
+
+.not-collapsed_borderless {
+  border: none;
+}
+
+.collapsed {
+  display: none;
+  color: #808080;
+  padding: 0 30px;
+}
+
+.divider {
+  width: 90%;
+  border-top: 1px solid #e4e4e4;
+  margin: auto;
+}
+
+.icon-minus {
+  display: none;
+}
+
+.show {
+  display: flex;
+}
+
+.not-show {
+  display: none;
+}
+
+/* #first-dropdown {
+  display: none;
+}
+
+#second-dropdown {
+  display: none;
+}
+
+#third-dropdown {
+  display: none;
+}
+
+#fourth-dropdown {
+  display: none;
+} */
+
+@media screen and (min-width: 1020px) {
+  main {
+    width: 35%;
+  }
+
+  .divider {
+    width: 90%;
+  }
+}
