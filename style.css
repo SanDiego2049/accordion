@@ -2,12 +2,20 @@
   font-family: "Worksans regular";
   src: url("assets/fonts/WorkSans-VariableFont_wght.ttf") format("truetype"); /* Safari, Android, iOS */
 }
-
 @font-face {
   font-family: "Worksans Italic";
   src: url("assets/fonts/WorkSans-Italic-VariableFont_wght.ttf")
     format("truetype"); /* Safari, Android, iOS */
 }
+
+
+
+/* {
+  box-sizing: border-box;
+  margin:0px;
+  padding: 0px;
+  margin:0px;
+} */
 
 body {
   margin: 0;
@@ -22,6 +30,12 @@ body {
   font-family: "Worksans regular";
   user-select: none;
 }
+
+
+img{
+  pointer-events: none;
+}
+
 
 main {
   min-height: 50%;
@@ -41,8 +55,15 @@ main {
   padding-bottom: 0;
 }
 
-figure {
-  margin: auto 10px;
+
+button{
+  width:auto;
+  height: auto;
+  border:0px;
+  padding: 0px;
+  background-color:none;
+  background-color: transparent;
+
 }
 
 .has-border {
@@ -52,6 +73,7 @@ figure {
 .not-collapsed {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 0 30px;
   cursor: pointer;
 }
@@ -75,34 +97,6 @@ figure {
   border-top: 1px solid #e4e4e4;
   margin: auto;
 }
-
-.icon-minus {
-  display: none;
-}
-
-.show {
-  display: flex;
-}
-
-.not-show {
-  display: none;
-}
-
-/* #first-dropdown {
-  display: none;
-}
-
-#second-dropdown {
-  display: none;
-}
-
-#third-dropdown {
-  display: none;
-}
-
-#fourth-dropdown {
-  display: none;
-} */
 
 @media screen and (min-width: 1020px) {
   main {
