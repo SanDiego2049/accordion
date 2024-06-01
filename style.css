@@ -41,7 +41,7 @@ main {
   padding-bottom: 0;
 }
 
-figure {
+.logo {
   margin: auto 10px;
 }
 
@@ -83,26 +83,6 @@ figure {
 .show {
   display: flex;
 }
-
-.not-show {
-  display: none;
-}
-
-/* #first-dropdown {
-  display: none;
-}
-
-#second-dropdown {
-  display: none;
-}
-
-#third-dropdown {
-  display: none;
-}
-
-#fourth-dropdown {
-  display: none;
-} */
 
 @media screen and (min-width: 1020px) {
   main {
